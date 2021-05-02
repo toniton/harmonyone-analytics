@@ -1,0 +1,19 @@
+{
+  "name": "harmonyanalytics",
+  "version": "1.0.0",
+  "description": "A platform where Harmony users can see all metrics dashboard for harmony ecosystem. Basically the website will be public and will have a dashboard with metrics taken automatically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toniton/harmonyone-analytics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toniton/harmonyone-analytics/issues"
+  },
+  "homepage": "https://github.com/toniton/harmonyone-analytics#readme"
+}
