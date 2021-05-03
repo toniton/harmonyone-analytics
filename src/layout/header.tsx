@@ -20,10 +20,15 @@ export const Header = () => {
   };
   return (
     <NavComponent>
-      <LogoComponent alt="logo" />
+      <LogoComponent alt="logo" mode={configContext.savedMode} />
       <ThemeModeLabel onChange={onToggleClick}>
-        <ThemeModeComponent />
-        Mode
+        <ThemeModeComponent
+          checked={configContext.savedMode === THEME_OPTIONS.LIGHT}
+        />
+        <span>
+          {configContext.savedMode === THEME_OPTIONS.DARK ? "Light" : "Dark"}{" "}
+          Mode
+        </span>
       </ThemeModeLabel>
     </NavComponent>
   );

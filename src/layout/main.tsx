@@ -1,23 +1,22 @@
-import React, { useContext, useEffect } from "react";
-import { ThemeContext } from "styled-components";
-import { ConfigContext } from "../config/context";
-import { THEME_OPTIONS } from "../config/theme";
-import { BackgroundComponent } from "../styles/layout";
+import React from "react";
+import styled from "styled-components";
+import { BackgroundComponent, Content, Sidebar } from "../styles/layout";
 import { Header } from "./header";
+
+const LayoutBackground = styled(BackgroundComponent)`
+  padding-top: 86px;
+`;
 
 export const MainLayout = (props: any) => {
   const { children } = props;
-  const themeContext = useContext(ThemeContext);
-  const configContext = useContext(ConfigContext);
-  useEffect(() => console.log("Current theme: ", themeContext), [themeContext]);
-  useEffect(() => console.log("Current theme: ", configContext), [
-    configContext,
-  ]);
-  //   configContext.setSavedMode(THEME_OPTIONS.DARK);
+
   return (
-    <BackgroundComponent>
+    <LayoutBackground>
       <Header />
-      {children}
-    </BackgroundComponent>
+      <Content>
+        <Sidebar />
+        {children}
+      </Content>
+    </LayoutBackground>
   );
 };
