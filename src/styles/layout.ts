@@ -22,7 +22,7 @@ export const NavComponent = styled.div`
   right: 0;
   width: 100%;
   border-bottom: 1px solid ${(props) => props.theme.navbar.borderColor};
-  z-index: 1;
+  z-index: 9999;
 `;
 
 export const LogoComponent = styled.img<{ mode: THEME_OPTIONS }>`
@@ -47,17 +47,18 @@ export const ThemeModeComponent = styled.input.attrs((props) => ({
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
   padding-left: 280px;
+  padding-bottom: 60px;
 `;
 
-export const Sidebar = styled.div`
+export const SidebarComponent = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 280px;
   position: fixed;
+  padding-top: 100px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -66,4 +67,23 @@ export const Sidebar = styled.div`
   background: ${(props) => props.theme.navbar.background};
   color: ${(props) => props.theme.typography.color};
   border-right: 1px solid ${(props) => props.theme.navbar.borderColor};
+`;
+
+export const MenuItem = styled.a`
+  width: 100%;
+  display: block;
+  padding: 15px 30px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: ${(props) => props.theme.links.color};
+  :hover {
+    color: ${(props) => props.theme.links.hover};
+    background: ${(props) => props.theme.links.hoverBg};
+  }
 `;

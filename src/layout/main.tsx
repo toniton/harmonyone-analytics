@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { BackgroundComponent, Content, Sidebar } from "../styles/layout";
+import { BackgroundComponent, Content } from "../styles/layout";
 import { Header } from "./header";
+import { Sidebar } from "./sidebar";
 
 const LayoutBackground = styled(BackgroundComponent)`
   padding-top: 86px;

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "styled-components";
 import { OverviewComponent } from "../components/overview";
+import { NFTMarketplacePage } from "./nftmarketplace";
 import { MainLayout } from "../layout/main";
 
 export const AnalyticsPage = () => {
@@ -9,6 +10,7 @@ export const AnalyticsPage = () => {
   return (
     <MainLayout>
       <OverviewComponent />
+      <NFTMarketplacePage />
     </MainLayout>
   );
 };

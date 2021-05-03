@@ -43,7 +43,9 @@ export const getTheme = (theme: THEME_OPTIONS) => {
         color: new Color(pallete.white),
       },
       links: {
-        color: new Color(pallete.electricblue).darken(0.15),
+        color: new Color(themecolor.foreground).darken(0.15),
+        hover: new Color(themecolor.foreground).darken(0.35),
+        hoverBg: new Color(themecolor.foreground).lighten(0.85),
       },
       menu: {
         color: new Color(themecolor.foreground).darken(0.15),
@@ -93,7 +95,9 @@ export const getTheme = (theme: THEME_OPTIONS) => {
         color: new Color(pallete.electricblue),
       },
       links: {
-        color: new Color(pallete.electricblue).darken(0.15),
+        color: new Color(themecolor.foreground).darken(0.15),
+        hover: new Color(themecolor.foreground).darken(0.35),
+        hoverBg: new Color(themecolor.foreground).lighten(0.85),
       },
       menu: {
         color: new Color(themecolor.foreground).darken(0.15),

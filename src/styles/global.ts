@@ -57,6 +57,7 @@ export const Spacing = styled.div`
   display: inline-flex;
   flex-wrap: wrap;
   gap: 12px;
+  width: 100%;
 `;
 
 export const Badge = styled.div`
@@ -86,10 +87,24 @@ export const CardComponent = styled.div`
   margin: 15px 0px;
 `;
 
-export const Heading6 = styled.h6`
+export const Heading4 = styled.h4`
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
+  color: ${(props) => props.theme.typography.color};
+`;
+
+export const Heading5 = styled.h5`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: ${(props) => props.theme.typography.color};
+`;
+
+export const Heading6 = styled.h6`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
   color: ${(props) => props.theme.typography.color};
 `;
 

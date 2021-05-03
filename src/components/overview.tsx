@@ -6,7 +6,7 @@ import {
   Body1,
   CardComponent,
   FeaturedStats,
-  Heading6,
+  Heading4,
   InfoItem,
   Section,
   Small1,
@@ -17,6 +17,7 @@ const GraphContainer = styled.div`
   width: 100%;
   margin-top: 15px;
   border-radius: 15px;
+  flex-wrap: wrap;
 `;
 
 export const OverviewComponent = () => {
@@ -101,7 +102,7 @@ export const OverviewComponent = () => {
 
   return (
     <Section>
-      <Heading6>Overview</Heading6>
+      <Heading4>Overview</Heading4>
       <CardComponent>
         <Spacing>
           <Badge>Rank #34</Badge>
