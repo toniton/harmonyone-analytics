@@ -7,3 +7,7 @@ Run yarn install and yarn start to run locally.
 ![alt text](./home-screen.png)
 
 ![alt text](./home-screen-dark.png)
+
+# PROTOTYPE.
+
+![alt text](./prototype.png)
