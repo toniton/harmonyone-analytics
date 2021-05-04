@@ -2,6 +2,7 @@ import styled from "styled-components";
 import logo from "../logo.svg";
 import logoDark from "../logo-dark.svg";
 import { THEME_OPTIONS } from "../config/theme";
+import { Link } from "react-router-dom";
 
 export const BackgroundComponent = styled.div`
   background: ${(props) => props.theme.body.background};
@@ -69,7 +70,7 @@ export const SidebarComponent = styled.div`
   border-right: 1px solid ${(props) => props.theme.navbar.borderColor};
 `;
 
-export const MenuItem = styled.a`
+export const MenuItem = styled(Link)`
   width: 100%;
   display: block;
   padding: 15px 30px;

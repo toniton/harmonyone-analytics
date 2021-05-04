@@ -1,3 +1,9 @@
-# PROTOTYPE.
+# Installation.
 
-![alt text](./prototype.png)
+Run yarn install and yarn start to run locally.
+
+# Preview.
+
+![alt text](./home-screen.png)
+
+![alt text](./home-screen-dark.png)
