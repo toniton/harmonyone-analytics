@@ -1,6 +1,6 @@
 # Installation.
 
-Run yarn install and yarn start to run locally.
+Run `yarn install` and `yarn start` to run the app locally.
 
 # Preview.
 
