@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import styled from "styled-components";
 import { MainLayout } from "../layout/main";
 import {
@@ -35,66 +35,62 @@ const ProductImage = styled.div`
 
 const NFTMarketplacePage = () => {
   return (
-    <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <MainLayout>
-          <Section>
-            <Heading4>NFT Marketplace</Heading4>
-            <CardComponent>
-              <Filter>
-                <Badge>All</Badge>
-                <Badge>Arts</Badge>
-                <Badge>Celebrities</Badge>
-                <Badge>Music</Badge>
-                <Badge>Sports</Badge>
-                <Badge>Gaming</Badge>
-              </Filter>
-            </CardComponent>
-            <ProductList>
-              <CardComponent>
-                <Spacing>
-                  <ProductImage />
-                  <Heading6>Kopor ke</Heading6>
-                </Spacing>
-              </CardComponent>
-              <CardComponent>
-                <Spacing>
-                  <ProductImage />
-                  <Heading6>Kopor ke</Heading6>
-                </Spacing>
-              </CardComponent>
-              <CardComponent>
-                <Spacing>
-                  <ProductImage />
-                  <div>
-                    <Heading6>Kopor ke</Heading6>
-                    <Body1>Harry porter</Body1>
-                  </div>
-                </Spacing>
-              </CardComponent>
-              <CardComponent>
-                <Spacing>
-                  <ProductImage />
-                  <Heading6>Kopor ke</Heading6>
-                </Spacing>
-              </CardComponent>
-              <CardComponent>
-                <Spacing>
-                  <ProductImage />
-                  <Heading6>Kopor ke</Heading6>
-                </Spacing>
-              </CardComponent>
-              <CardComponent>
-                <Spacing>
-                  <ProductImage />
-                  <Heading6>Kopor ke</Heading6>
-                </Spacing>
-              </CardComponent>
-            </ProductList>
-          </Section>
-        </MainLayout>
-      </Suspense>
-    </div>
+    <MainLayout>
+      <Section>
+        <Heading4>NFT Marketplace</Heading4>
+        <CardComponent>
+          <Filter>
+            <Badge>All</Badge>
+            <Badge>Arts</Badge>
+            <Badge>Celebrities</Badge>
+            <Badge>Music</Badge>
+            <Badge>Sports</Badge>
+            <Badge>Gaming</Badge>
+          </Filter>
+        </CardComponent>
+        <ProductList>
+          <CardComponent>
+            <Spacing>
+              <ProductImage />
+              <Heading6>Kopor ke</Heading6>
+            </Spacing>
+          </CardComponent>
+          <CardComponent>
+            <Spacing>
+              <ProductImage />
+              <Heading6>Kopor ke</Heading6>
+            </Spacing>
+          </CardComponent>
+          <CardComponent>
+            <Spacing>
+              <ProductImage />
+              <div>
+                <Heading6>Kopor ke</Heading6>
+                <Body1>Harry porter</Body1>
+              </div>
+            </Spacing>
+          </CardComponent>
+          <CardComponent>
+            <Spacing>
+              <ProductImage />
+              <Heading6>Kopor ke</Heading6>
+            </Spacing>
+          </CardComponent>
+          <CardComponent>
+            <Spacing>
+              <ProductImage />
+              <Heading6>Kopor ke</Heading6>
+            </Spacing>
+          </CardComponent>
+          <CardComponent>
+            <Spacing>
+              <ProductImage />
+              <Heading6>Kopor ke</Heading6>
+            </Spacing>
+          </CardComponent>
+        </ProductList>
+      </Section>
+    </MainLayout>
   );
 };
 

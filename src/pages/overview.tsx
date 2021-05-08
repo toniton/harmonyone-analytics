@@ -1,4 +1,4 @@
-import React, { Suspense, useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { createChart, IChartApi } from "lightweight-charts";
 import styled, { ThemeContext } from "styled-components";
 import {
@@ -102,45 +102,41 @@ const OverviewPage = () => {
   }, [chartRef, themeContext.graph]);
 
   return (
-    <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <MainLayout>
-          <Section>
-            <Heading4>Overview</Heading4>
-            <CardComponent>
-              <Spacing>
-                <Badge>Rank #34</Badge>
-                <Body1>
-                  Harmony aims to build an open network of nodes operated and
-                  governed by a large community. This node community is called
-                  Pangaea. ‍ Are we decentralized yet? There’s no consensus
-                  without participation. There are now 1,000 Harmony nodes – so
-                  far 640 of them run by the community – in line with thousands
-                  of Bitcoin and Ethereum nodes. Pangaea consists of volunteers
-                  and validators from more than 100 countries and most of them
-                  have never run a node before.
-                </Body1>
-                <FeaturedStats>
-                  <InfoItem>
-                    <Small1>CURRENT PRICE</Small1>
-                    <Body1>$0.142</Body1>
-                  </InfoItem>
-                  <InfoItem>
-                    <Small1>MARKET CAP</Small1>
-                    <Body1>$1,160,532,332</Body1>
-                  </InfoItem>
-                  <InfoItem>
-                    <Small1>24HR VOLUME</Small1>
-                    <Body1>$103,128,808</Body1>
-                  </InfoItem>
-                </FeaturedStats>
-                <GraphContainer id="performance-graph" ref={performanceRef} />
-              </Spacing>
-            </CardComponent>
-          </Section>
-        </MainLayout>
-      </Suspense>
-    </div>
+    <MainLayout>
+      <Section>
+        <Heading4>Overview</Heading4>
+        <CardComponent>
+          <Spacing>
+            <Badge>Rank #34</Badge>
+            <Body1>
+              Harmony aims to build an open network of nodes operated and
+              governed by a large community. This node community is called
+              Pangaea. ‍ Are we decentralized yet? There’s no consensus without
+              participation. There are now 1,000 Harmony nodes – so far 640 of
+              them run by the community – in line with thousands of Bitcoin and
+              Ethereum nodes. Pangaea consists of volunteers and validators from
+              more than 100 countries and most of them have never run a node
+              before.
+            </Body1>
+            <FeaturedStats>
+              <InfoItem>
+                <Small1>CURRENT PRICE</Small1>
+                <Body1>$0.142</Body1>
+              </InfoItem>
+              <InfoItem>
+                <Small1>MARKET CAP</Small1>
+                <Body1>$1,160,532,332</Body1>
+              </InfoItem>
+              <InfoItem>
+                <Small1>24HR VOLUME</Small1>
+                <Body1>$103,128,808</Body1>
+              </InfoItem>
+            </FeaturedStats>
+            <GraphContainer id="performance-graph" ref={performanceRef} />
+          </Spacing>
+        </CardComponent>
+      </Section>
+    </MainLayout>
   );
 };
 

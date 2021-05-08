@@ -1,15 +1,13 @@
 import { lazy } from "react";
-import NFTMarketplacePage from "./pages/nftmarketplace";
-import OverviewPage from "./pages/overview";
 
-// const OverviewPage = lazy(() => import("./pages/overview"));
-// const NFTMarketplacePage = lazy(() => import("./pages/nftmarketplace"));
+const OverviewPage = lazy(() => import("./pages/overview"));
+const NFTMarketplacePage = lazy(() => import("./pages/nftmarketplace"));
 
 export const routes: any[] = [
   {
     name: "Overview",
     key: "overview",
-    path: "/",
+    path: "/overview",
     exact: true,
     component: OverviewPage,
   },
