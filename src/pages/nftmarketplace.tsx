@@ -11,9 +11,12 @@ import {
   Body1,
 } from "../styles/global";
 
-const Filter = styled.div`
+const Filter = styled(CardComponent)`
   display: inline-flex;
+  width: 100%;
+  flex-direction: row;
   gap: 8px;
+  padding: 15px;
 `;
 
 const ProductList = styled.div`
@@ -33,59 +36,60 @@ const ProductImage = styled.div`
   border-radius: 15px;
 `;
 
-const NFTMarketplacePage = () => {
+const DAppsPage = () => {
   return (
     <MainLayout>
       <Section>
         <Heading4>NFT Marketplace</Heading4>
-        <CardComponent>
-          <Filter>
-            <Badge>All</Badge>
-            <Badge>Arts</Badge>
-            <Badge>Celebrities</Badge>
-            <Badge>Music</Badge>
-            <Badge>Sports</Badge>
-            <Badge>Gaming</Badge>
-          </Filter>
-        </CardComponent>
+        <Filter>
+          <Badge>All</Badge>
+          <Badge>Arts</Badge>
+          <Badge>Celebrities</Badge>
+          <Badge>Music</Badge>
+          <Badge>Sports</Badge>
+          <Badge>Gaming</Badge>
+        </Filter>
         <ProductList>
           <CardComponent>
-            <Spacing>
+            <Spacing vertical gap="6px">
               <ProductImage />
               <Heading6>Kopor ke</Heading6>
+              <Body1>56k Arts sold</Body1>
             </Spacing>
           </CardComponent>
           <CardComponent>
-            <Spacing>
+            <Spacing vertical gap="6px">
               <ProductImage />
               <Heading6>Kopor ke</Heading6>
+              <Body1>56k Arts sold</Body1>
             </Spacing>
           </CardComponent>
           <CardComponent>
-            <Spacing>
+            <Spacing vertical gap="6px">
               <ProductImage />
-              <div>
-                <Heading6>Kopor ke</Heading6>
-                <Body1>Harry porter</Body1>
-              </div>
+              <Heading6>Kopor ke</Heading6>
+              <Body1>56k Arts sold</Body1>
             </Spacing>
           </CardComponent>
           <CardComponent>
-            <Spacing>
+            <Spacing vertical gap="6px">
               <ProductImage />
               <Heading6>Kopor ke</Heading6>
+              <Body1>56k Arts sold</Body1>
             </Spacing>
           </CardComponent>
           <CardComponent>
-            <Spacing>
+            <Spacing vertical gap="6px">
               <ProductImage />
               <Heading6>Kopor ke</Heading6>
+              <Body1>56k Arts sold</Body1>
             </Spacing>
           </CardComponent>
           <CardComponent>
-            <Spacing>
+            <Spacing vertical gap="6px">
               <ProductImage />
               <Heading6>Kopor ke</Heading6>
+              <Body1>56k Arts sold</Body1>
             </Spacing>
           </CardComponent>
         </ProductList>
@@ -94,4 +98,4 @@ const NFTMarketplacePage = () => {
   );
 };
 
-export default NFTMarketplacePage;
+export default DAppsPage;

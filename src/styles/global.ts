@@ -53,21 +53,25 @@ export const Section = styled.div`
   margin: 0px 30px;
 `;
 
-export const Spacing = styled.div`
+export const Spacing = styled.div<any>`
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 12px;
+  ${(props: any) => props.gap && "flex-direction: column;"}
+  gap: ${(props: any) => props.gap ?? "12px"};
   width: 100%;
+  flex-direction: column;
+  ${(props: any) => props.vertical && "flex-direction: column;"}
+  ${(props: any) => props.horizontal && "flex-direction: row;"}
 `;
 
 export const Badge = styled.div`
-  display: flex;
+  display: block;
+  width: fit-content;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 15px;
   border-radius: 15px;
-  flex: none;
   font-size: 12px;
   background: ${(props) => props.theme.badge.background};
   color: ${(props) => props.theme.badge.color};
@@ -124,17 +128,20 @@ export const Small1 = styled.span`
   color: ${(props) => props.theme.typography.secondary};
 `;
 
-export const FeaturedStats = styled.div`
+export const Stats = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  width: 100%;
+  flex-grow: 1;
+  color: ${(props) => props.theme.typography.color};
+`;
+
+export const FeaturedStats = styled(Stats)`
   padding: 15px 30px;
   background: #fafbfc;
   border-radius: 12px;
-  width: 100%;
-  flex-grow: 1;
   background: ${(props) => props.theme.card.featBackground};
-  color: ${(props) => props.theme.typography.color};
 `;
 
 export const InfoItem = styled.div`

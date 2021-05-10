@@ -5,6 +5,7 @@ export const Sidebar = () => {
   return (
     <SidebarComponent>
       <MenuItem to="/">Overview</MenuItem>
+      <MenuItem to="/dapps">DApps</MenuItem>
       <MenuItem to="/nft">NFT Marketplace</MenuItem>
     </SidebarComponent>
   );
