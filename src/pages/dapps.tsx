@@ -11,20 +11,23 @@ import {
   Small1,
   InfoItem,
   Stats,
+  InfoImage,
 } from "../styles/global";
 
-const ProductList = styled.ul`
+const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: 15px;
+  grid-auto-flow: row;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
-const ProductImage = styled.div`
-  background: #f3f3f3;
-  width: 100%;
-  height: 240px;
-  border-radius: 15px;
-`;
+const GridItem = styled.div``;
 
 const NFTMarketplacePage = () => {
   return (
@@ -34,9 +37,10 @@ const NFTMarketplacePage = () => {
           DApps <Small1>(Decentralized Applications)</Small1>
         </Heading4>
         <CardComponent>
-          <ProductList>
-            <li>
+          <GridContainer>
+            <GridItem>
               <Spacing vertical gap="6px">
+                <InfoImage />
                 <Heading6>Polymarket</Heading6>
                 <Body1>Bet on outcomes. Trade on information markets.</Body1>
                 <Stats>
@@ -54,9 +58,10 @@ const NFTMarketplacePage = () => {
                   </InfoItem>
                 </Stats>
               </Spacing>
-            </li>
-            <li>
+            </GridItem>
+            <GridItem>
               <Spacing vertical gap="6px">
+                <InfoImage />
                 <Heading6>Polymarket</Heading6>
                 <Body1>Bet on outcomes. Trade on information markets.</Body1>
                 <Stats>
@@ -74,9 +79,10 @@ const NFTMarketplacePage = () => {
                   </InfoItem>
                 </Stats>
               </Spacing>
-            </li>
-            <li>
+            </GridItem>
+            <GridItem>
               <Spacing vertical gap="6px">
+                <InfoImage />
                 <Heading6>Polymarket</Heading6>
                 <Body1>Bet on outcomes. Trade on information markets.</Body1>
                 <Stats>
@@ -94,9 +100,10 @@ const NFTMarketplacePage = () => {
                   </InfoItem>
                 </Stats>
               </Spacing>
-            </li>
-            <li>
+            </GridItem>
+            <GridItem>
               <Spacing vertical gap="6px">
+                <InfoImage />
                 <Heading6>Polymarket</Heading6>
                 <Body1>Bet on outcomes. Trade on information markets.</Body1>
                 <Stats>
@@ -114,9 +121,10 @@ const NFTMarketplacePage = () => {
                   </InfoItem>
                 </Stats>
               </Spacing>
-            </li>
-            <li>
+            </GridItem>
+            <GridItem>
               <Spacing vertical gap="6px">
+                <InfoImage />
                 <Heading6>Polymarket</Heading6>
                 <Body1>Bet on outcomes. Trade on information markets.</Body1>
                 <Stats>
@@ -134,9 +142,10 @@ const NFTMarketplacePage = () => {
                   </InfoItem>
                 </Stats>
               </Spacing>
-            </li>
-            <li>
+            </GridItem>
+            <GridItem>
               <Spacing vertical gap="6px">
+                <InfoImage />
                 <Heading6>Polymarket</Heading6>
                 <Body1>Bet on outcomes. Trade on information markets.</Body1>
                 <Stats>
@@ -154,8 +163,8 @@ const NFTMarketplacePage = () => {
                   </InfoItem>
                 </Stats>
               </Spacing>
-            </li>
-          </ProductList>
+            </GridItem>
+          </GridContainer>
         </CardComponent>
       </Section>
     </MainLayout>

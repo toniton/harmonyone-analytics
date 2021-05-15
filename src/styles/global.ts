@@ -144,6 +144,13 @@ export const FeaturedStats = styled(Stats)`
   background: ${(props) => props.theme.card.featBackground};
 `;
 
+export const InfoImage = styled.div`
+  background: #f3f3f3;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+`;
+
 export const InfoItem = styled.div`
   display: flex;
   flex-direction: column;

@@ -33,19 +33,6 @@ export const LogoComponent = styled.img<{ mode: THEME_OPTIONS }>`
   margin: auto 0;
 `;
 
-export const ThemeModeLabel = styled.label`
-  display: block;
-  padding-right: 10px;
-  padding-left: 22px;
-  text-indent: -22px;
-`;
-
-export const ThemeModeComponent = styled.input.attrs((props) => ({
-  type: "checkbox",
-}))`
-  margin-right: 8px;
-`;
-
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
