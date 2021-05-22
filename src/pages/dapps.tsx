@@ -16,9 +16,10 @@ import {
 
 const GridContainer = styled.div`
   display: grid;
-  grid-auto-flow: row;
+  align-items: flex-start;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
   @media (min-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -26,7 +27,6 @@ const GridContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 `;
-
 const GridItem = styled.div``;
 
 const NFTMarketplacePage = () => {

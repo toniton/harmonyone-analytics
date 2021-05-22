@@ -43,8 +43,8 @@ export const GlobalStyle = createGlobalStyle<any>`
         outline: none;
     }
 
-    *, *:before, *:after {
-        box-sizing: inherit;
+    *, *::before, *::after {
+        box-sizing: border-box;
     }
 
 `;
@@ -132,8 +132,9 @@ export const Stats = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
   width: 100%;
-  flex-grow: 1;
   color: ${(props) => props.theme.typography.color};
 `;
 
@@ -152,7 +153,11 @@ export const InfoImage = styled.div`
 `;
 
 export const InfoItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 40px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  ${Body1} {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 `;

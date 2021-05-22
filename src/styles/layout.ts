@@ -36,25 +36,32 @@ export const LogoComponent = styled.img<{ mode: THEME_OPTIONS }>`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 280px;
   padding-bottom: 60px;
+
+  @media (min-width: 900px) {
+    padding-left: 260px;
+  }
 `;
 
 export const SidebarComponent = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 280px;
-  position: fixed;
+  display: none;
   padding-top: 100px;
   top: 0;
   left: 0;
   bottom: 0;
   z-index: 0;
-  height: 100%;
   background: ${(props) => props.theme.navbar.background};
   color: ${(props) => props.theme.typography.color};
   border-right: 1px solid ${(props) => props.theme.navbar.borderColor};
+
+  @media (min-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 260px;
+    position: fixed;
+    height: 100%;
+  }
 `;
 
 export const MenuItem = styled(Link)`
