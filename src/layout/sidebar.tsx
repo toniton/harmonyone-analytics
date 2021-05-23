@@ -7,7 +7,8 @@ export const Sidebar = () => {
       <MenuItem to="/">Overview</MenuItem>
       <MenuItem to="/socials">Socials</MenuItem>
       <MenuItem to="/dapps">DApps</MenuItem>
-      <MenuItem to="/nft">NFT Marketplace</MenuItem>
+      <MenuItem to="/marketplace">Marketplace</MenuItem>
+      <MenuItem to="/exchange">Exchange</MenuItem>
       <MenuItem to="/staking">Staking</MenuItem>
     </SidebarComponent>
   );

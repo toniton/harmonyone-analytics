@@ -21,8 +21,16 @@ const Filter = styled(CardComponent)`
 
 const ProductList = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 15px;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   ${CardComponent} {
     padding: 15px;
     margin: 0px;
@@ -32,20 +40,21 @@ const ProductList = styled.div`
 const ProductImage = styled.div`
   background: #f3f3f3;
   width: 100%;
-  height: 240px;
+  height: 160px;
   border-radius: 15px;
 `;
 
-const DAppsPage = () => {
+const MarketplacePage = () => {
   return (
     <MainLayout>
       <Section>
-        <Heading4>NFT Marketplace</Heading4>
+        <Heading4>Marketplace</Heading4>
         <Filter>
           <Badge>All</Badge>
           <Badge>Arts</Badge>
           <Badge>Celebrities</Badge>
           <Badge>Music</Badge>
+          <Badge>NFT</Badge>
           <Badge>Sports</Badge>
           <Badge>Gaming</Badge>
         </Filter>
@@ -98,4 +107,4 @@ const DAppsPage = () => {
   );
 };
 
-export default DAppsPage;
+export default MarketplacePage;

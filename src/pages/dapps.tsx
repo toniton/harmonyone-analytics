@@ -29,7 +29,7 @@ const GridContainer = styled.div`
 `;
 const GridItem = styled.div``;
 
-const NFTMarketplacePage = () => {
+const DappsPage = () => {
   return (
     <MainLayout>
       <Section>
@@ -171,4 +171,4 @@ const NFTMarketplacePage = () => {
   );
 };
 
-export default NFTMarketplacePage;
+export default DappsPage;

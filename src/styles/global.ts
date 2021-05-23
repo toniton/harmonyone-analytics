@@ -145,10 +145,11 @@ export const FeaturedStats = styled(Stats)`
   background: ${(props) => props.theme.card.featBackground};
 `;
 
-export const InfoImage = styled.div`
+export const InfoImage = styled.div<any>`
   background: #f3f3f3;
   width: 60px;
   height: 60px;
+  ${(props: any) => props.small && "width: 40px; height: 40px;"}
   border-radius: 60px;
 `;
 

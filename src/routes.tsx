@@ -2,7 +2,9 @@ import { lazy } from "react";
 
 const OverviewPage = lazy(() => import("./pages/overview"));
 const DAppsPage = lazy(() => import("./pages/dapps"));
-const NFTMarketplacePage = lazy(() => import("./pages/nftmarketplace"));
+const MarketplacePage = lazy(() => import("./pages/marketplace"));
+const ExchangePage = lazy(() => import("./pages/exchange"));
+const SocialsPage = lazy(() => import("./pages/socials"));
 
 export const routes: any[] = [
   {
@@ -19,9 +21,21 @@ export const routes: any[] = [
     component: DAppsPage,
   },
   {
-    name: "NFT",
-    key: "nftmarketplace",
-    path: "/nft",
-    component: NFTMarketplacePage,
+    name: "Marketplace",
+    key: "marketplace",
+    path: "/marketplace",
+    component: MarketplacePage,
+  },
+  {
+    name: "Exchange",
+    key: "exchange",
+    path: "/exchange",
+    component: ExchangePage,
+  },
+  {
+    name: "Socials",
+    key: "socials",
+    path: "/socials",
+    component: SocialsPage,
   },
 ];
